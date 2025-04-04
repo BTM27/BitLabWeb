@@ -1,0 +1,171 @@
+html , body{
+  padding-top: 20px;
+}
+
+
+
+/*Search header link*/
+  .headerSearchBar{
+      outline: none;
+      border:0;
+      background: none;
+      width:53px;
+      font-size:18px;
+      font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      color: rgb(255, 255, 255);
+      cursor: pointer;
+      transition: outline 400ms , border 400ms , width 400ms , font-size 400ms , padding 400ms , transform 400ms , margin 200ms;
+    }
+
+    .headerSearchBar::placeholder{
+      color: rgb(255, 255, 255);
+      transition: color 200ms;
+      font-size:20px;
+    }
+
+    .headerSearchBar:hover{
+      transform: scale(1.17);
+      text-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
+      margin: 0 5px 0 5px
+    }
+
+    .headerSearchBar:focus{
+      border-bottom: 1px white solid;
+      width:15%;
+      font-size: 18px;
+      padding:5px;
+      caret-color:rgb(255, 255, 255);
+    }
+
+/*SubHeader*/
+
+.subHeader{
+  display:flex;
+  position:fixed;
+  z-index:1;
+  top:70px;
+  left:25%;
+  right:25%;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(59, 59, 59, 0.95);
+  border-bottom-left-radius: 80px;
+  border-bottom-right-radius: 80px;
+  box-shadow: 0px 0px 10px rgba(21, 226, 226, 0.2);
+  padding-inline:80px;
+  padding-block:5px;
+  justify-content: space-around;
+  display:none;
+}
+
+/*Product Grid*/
+
+  .shopSection1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .productGrid{
+    display: flex;
+    flex-wrap:wrap;
+    gap: 20px;
+    justify-content: center;    
+    padding-top:100px;
+    user-select: none;
+    width: 72%;
+    padding-bottom:150px;
+  }
+
+  .productDisplayShopBT{
+    height: 420px;
+    display:flex;
+  }
+
+  .productOnGrid{
+    height:93%;
+    max-height: 320px;
+    width:220px;
+    background-image: url("../productImages/2a211cc3-21a4-4096-abb2-5076bae74bfb.webp");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100% , 80%;
+    background-color: rgb(255, 255, 255);
+    box-shadow:inset 0 0px 10px rgb(0, 0, 0);
+    border: 2px , grey, solid;
+    border-radius: 5px;
+    display:flex;
+    flex-direction: column;
+    padding: 15px;
+    transition: box-shadow 500ms , max-height 100ms;
+    cursor:pointer;
+
+  }
+
+  .productOnGrid:hover{
+    box-shadow:inset 0 0px 10px rgba(21, 226, 226, 0.9);
+  }
+
+  .productOnGrid.cd{
+    cursor: pointer;
+    max-height: 93%;
+  }
+
+  .productOnGrid.cd .PDOG-configureButton{
+    display:block;
+  }
+
+  .productGridView{
+    height: auto;
+    width: auto;
+    opacity: 0.98;
+    box-shadow: 0 0px 10px rgb(0, 0, 0);
+  }
+
+  .PDOG-name{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    font-weight:bold;
+    color: rgba(22, 22, 22, 0.798);
+    margin-top:30px;
+    margin-bottom:5px;
+
+  }
+
+  .PDOG-info{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 14px;
+    color:rgba(22, 22, 22, 0.798);
+    margin:0;
+  }
+
+.PDOG-configureButton{
+  width:120px;
+  padding:12.5px;
+  padding-inline:15px;
+  background-color:rgb(20,20,20, 0.95);
+  color:white;
+  border-radius:3px;
+  align-self: center;
+  margin-top:25px;
+  display:none;
+  border:none;
+}
+
+.PDOG-configureButton:hover{
+  opacity: 0.8;
+  cursor:pointer;
+}
+
+/*No Result Message*/
+
+.noResultMessage{
+  display:none;
+  text-align: center;
+  position:absolute;
+  top:50%;
+  bottom:50%;
+  left:40%;
+  right: 40%;
+}

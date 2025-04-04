@@ -1,0 +1,120 @@
+@media (max-width: 449.999999999999px){
+
+
+  .gs , .productInfo {
+    transform: scale(1.25);
+  }
+
+  .gs:hover , .textPI:hover , .productInfo:hover{
+    cursor:pointer;
+  }
+
+
+
+  div.productsDisplay{
+    flex-direction: column;
+    height:85%;
+  }
+  
+  div.section2{
+    height:800px;
+    background-size: auto;
+  }
+
+  div.spacer{
+    margin-block: 280px;
+  }
+
+  .mainTitle{
+    transform: scale(0.9);
+  }
+
+}
+
+@media (min-width: 450px) and (max-width: 550px){
+  .section2{
+    transform: scale(0.925);
+    padding-inline: 0;
+  }
+
+  .gs , .textPI , .productInfo {
+    transform: scale(0.85);
+  }
+
+  div.container{
+    display: flex;
+    justify-content: center;
+  }
+
+}
+
+@media (min-width: 700px){
+  div.container{
+    display: flex;
+    justify-content: center;
+  }
+
+  div.section2{
+    transform:scale(1.1);
+    width: 600px;
+  }
+
+
+}
+
+@media (min-width: 920px) {
+  body , html{
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-block: 60px;
+  }
+
+  .header {
+    height:100px;
+  }
+
+  .subHeader{
+    top:100px;
+  }
+
+  div.container{
+    display: flex;
+    justify-content: center;
+  }
+
+  div.section2{
+    transform:scale(1.4);
+    width: 600px;
+  }
+
+  div.section3{
+    padding-inline: 120px;
+    p{
+      margin-bottom:40px;
+      margin-top:40px;
+    }
+  }
+
+  div.footer{
+    padding-inline:100px;
+    justify-content: space-evenly;
+  }
+
+  div.spacer{
+    margin-block: 50px;
+  }
+
+  div.section1{
+    margin-bottom: 150px;
+    margin-top:50px;
+  }
+
+  div.section4{
+    height: 400px;
+    padding-bottom:0;
+  }
+
+  p{
+    font-size: 150%;
+  }
+}

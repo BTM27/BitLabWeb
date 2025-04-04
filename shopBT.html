@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html id="ht">
+  <head>
+    <title>
+      shopBT
+    </title>
+    <link rel="stylesheet" href="siteStyles/main.css">
+    <link rel="stylesheet" href="siteStyles/shop.css">
+    <link rel="stylesheet" href="siteStyles/shopMediaBehaviour.css">
+  </head>
+  <body id="bd">
+    <header>
+      <div class="header fade-in">
+          <a href="index.html" style="text-decoration: none;">
+            <p class="headerLink" style="cursor: pointer;">Home</p>
+          </a>
+          <input type="text" placeholder="Search" class="headerSearchBar">
+          <p class="headerLink" onclick="toggleBox()">Categories</p>
+        </div>
+    </header>
+    <div class="subHeader" id = SubHeader>
+      <p class="headerLink categoryLink" data-category="smart-home">Smart Home</p>
+      <strong style="color:white;">|</strong>
+      <p class="headerLink categoryLink" data-category="mini-handheld">Mini-Handhelds</p>
+      <strong style="color:white;">|</strong>
+      <p class="headerLink categoryLink" data-category="gadgets">Gadgets</p>
+      <strong style="color:white;">|</strong>
+      <p class="headerLink categoryLink" data-category="all">Show All</p>
+    </div>
+    <!--Product Grid-->
+    <div class="shopSection1">
+      <div class="productGrid">
+        <div class="productDisplayShopBT fade-in">
+          <div class="productOnGrid" data-category="gadgets">
+            <img src="productImages/imperioNil.png" class="productGridView">
+            <p class="PDOG-name">Imperio-Nil</p>
+            <p class="PDOG-info" style="font-size:13px;">The imperio Nil is the perfect pocket-sized soundboard with programmable buttons and a multi-purpose dial!</p>
+            <button class="PDOG-configureButton">CONFIGURE</button>
+          </div>
+        </div>
+        <div class="productDisplayShopBT fade-in">
+          <div class="productOnGrid" data-category="gadgets">
+            <img src="productImages/ImperioB.webp" class="productGridView">
+            <p class="PDOG-name">Imperio-B</p>
+            <p class="PDOG-info">The base model of our Imperio soundboards, portable and practical.</p>
+            <button class="PDOG-configureButton">CONFIGURE</button>
+          </div>
+        </div>
+        <div class="productDisplayShopBT fade-in">
+          <div class="productOnGrid" data-category="gadgets">
+            <img src="productImages/ImperioPro.webp" class="productGridView">
+            <p class="PDOG-name">Imperio-Pro</p>
+            <p class="PDOG-info">The imperio Pro delivers unmatched sound quality for its size, comeplete with an audio waveform visualiser! </p>
+            <button class="PDOG-configureButton">CONFIGURE</button>
+          </div>
+        </div>
+        <div class="productDisplayShopBT fade-in">
+          <div class="productOnGrid" data-category="smart-home">
+            <img src="productImages/procu-nil.png" class="productGridView">
+            <p class="PDOG-name">Procu-Nil</p>
+            <p class="PDOG-info">A small, compact home management device with programmable buttons. </p>
+            <button class="PDOG-configureButton">CONFIGURE</button>
+          </div>
+        </div>
+        <div class="productDisplayShopBT fade-in">
+          <div class="productOnGrid" data-category="smart-home">
+            <img src="productImages/procu-B.png" class="productGridView">
+            <p class="PDOG-name">Procu-B</p>
+            <p class="PDOG-info" style="font-size: 13px;">The Base Procu offers a perfect balance between cost and practicality, upgraded with an OLED display for precise control. </p>
+            <button class="PDOG-configureButton">CONFIGURE</button>
+          </div>
+        </div>
+        <div class="productDisplayShopBT fade-in">
+          <div class="productOnGrid" data-category="smart-home">
+            <img src="productImages/procu-pro.png" class="productGridView">
+            <p class="PDOG-name">Procu-Pro</p>
+            <p class="PDOG-info" style="font-size: 12.5px;">A complete step-up. A touchscreen display, mood lights, and easy to wallmount! The ultimate home-management device.</p>
+            <button class="PDOG-configureButton">CONFIGURE</button>
+          </div>
+        </div>
+        <div class="productDisplayShopBT fade-in">
+          <div class="productOnGrid" data-category="smart-home gadgets">
+            <img src="productImages/indi-Nil.png" class="productGridView">
+            <p class="PDOG-name">Indi-Nil</p>
+            <p class="PDOG-info">Offers you the necessary heads-up for the day, displaying weather and air quality.</p>
+            <button class="PDOG-configureButton">CONFIGURE</button>
+          </div>
+        </div>
+        <div class="productDisplayShopBT fade-in">
+          <div class="productOnGrid" data-category="smart-home gadgets">
+            <img src="productImages/indi-B.png" class="productGridView">
+            <p class="PDOG-name">Indi-B</p>
+            <p class="PDOG-info">Your personal weather forcast. Lightweight and easy to wall mount. </p>
+            <button class="PDOG-configureButton">CONFIGURE</button>
+          </div>
+        </div>
+        <div class="productDisplayShopBT fade-in">
+          <div class="productOnGrid" data-category="smart-home gadgets">
+            <img src="productImages/Indi-pro.png" class="productGridView">
+            <p class="PDOG-name">Indi-PRO</p>
+            <p class="PDOG-info">With the Indi PRO, you have accsess to precise, offline weather forcasts from all over the world! </p>
+            <button class="PDOG-configureButton">CONFIGURE</button>
+          </div>
+        </div>
+        <div class="productDisplayShopBT">
+          <div class="productOnGrid" data-category="mini-handheld">
+            <img src="productImages/P-0.png" class="productGridView">
+            <p class="PDOG-name">P-mini</p>
+            <p class="PDOG-info">The cutest. The smallest. The most smuggly!! </p>
+            <button class="PDOG-configureButton">CONFIGURE</button>
+          </div>
+        </div>
+        <div class="productDisplayShopBT">
+          <div class="productOnGrid" data-category="mini-handheld">
+            <img src="productImages/p1.webp" class="productGridView">
+            <p class="PDOG-name">P1</p>
+            <p class="PDOG-info">The perfect retro handheld designed with customizability in mind! </p>
+            <button class="PDOG-configureButton">CONFIGURE</button>
+          </div>
+        </div>
+        <div class="productDisplayShopBT">
+          <div class="productOnGrid" data-category="mini-handheld">
+            <img src="productImages/P-pro.png" class="productGridView">
+            <p class="PDOG-name">P-PRO</p>
+            <p class="PDOG-info">The Pro model of the P series, powered by the PI 5! </p>
+            <button class="PDOG-configureButton">CONFIGURE</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="noResultMessage" id="noResultMessage">
+      <p style="color:white; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">No products matched your search. <a href="shopBT.html" class="headerLink" style="font-size:12px;"> RETURN</a></p>
+    </div>
+    <!-- Footer -->
+    <div class="footer fade-in">
+      <div class="usefulLinks">
+          <p><span style="font-size:20px;">BitLab</span> <span style="font-size:12px;">est.2025</span></p>
+          <p style="margin-top:5px;">Copyright &copy; 2025</p>
+      </div>
+      <div class="usefulLinks">
+          <p><strong>Contact</strong></p>
+          <p>HelloBLab@gmail.ro</p>
+          <p>+40 723 272 938</p>
+          <p>+40 722 292 092</p>
+          <p>700031</p>
+      </div>
+      <div class="usefulLinks">
+          <p><strong>Help</strong></p>
+          <p>Assembly assistance</p>
+          <p>Delivery</p>
+      </div>
+  </div>
+
+  <!--Script-->
+  <script>
+
+    const body = document.getElementById('bd');
+    const html = document.getElementById('ht');
+    body.style.paddingTop = "20px";
+    html.style.paddingTop = "20px";
+
+    function toggleBox() {
+
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+
+      const box = document.getElementById('SubHeader');
+      if (box.style.display === 'flex') {
+        box.style.display = 'none';
+        body.style.paddingTop = "20px";
+        html.style.paddingTop = "20px";
+      } else {
+        box.style.display = 'flex';
+        body.style.paddingTop = "60px";
+        html.style.paddingTop = "60px";
+      }
+    }
+
+    function scrollToTop() {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+
+      document.querySelectorAll('.productOnGrid').forEach(product => {
+        product.addEventListener('click', function () {
+          this.classList.add('cd');
+        });
+
+        product.addEventListener('mouseleave', function () {
+          this.classList.remove('cd');
+        });
+      });
+
+
+
+  </script>
+  <script src="scripts/searchBar.js"></script>
+  <script src="scripts/categoryFilter.js"></script>
+  <script src="scripts/scrollingAnimations.js"></script>
+
+  </body>
+</html>
+

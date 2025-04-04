@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="BitLab is where creativity meets Pi-powered gadgets. Discover customizable handhelds and smart devices made for makers!">
+    <title>BitLab.ro</title>
+    <link rel="stylesheet" href="siteStyles/main.css">
+    <link rel="stylesheet" href="siteStyles/mediaBehaviour.css">
+</head>
+<body style="margin: 0; font-family: Arial, sans-serif; scroll-behavior: smooth;">
+
+    <script src="scripts/script.js"></script>
+
+    <!-- Header Section -->
+    <header>
+        <div class="header">
+            <!-- Home Button as "Back to Top" -->
+            <p class="headerLink" onclick="scrollToTop()" style="cursor: pointer;">Home</p>
+            <a href="shopBT.html" style="text-decoration:none;">
+                <p class="headerLink">Shop</p>
+            </a>
+            <!-- Info Button as "Go to Bottom" -->
+            <p class="headerLink" onclick="scrollToBottom()" style="cursor: pointer;">Info</p>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <div class="section1 fade-in">
+        <p class="mainTitle" style="font-weight: bold; font-size: 65px; margin: 0; max-width: 100px">Welcome, BitLab.</p>
+        <p style="margin-left:10px; font-weight:lighter;font-size: 12px;margin:0;">Small Bits, Big Ideas™</p>
+        <p style="margin-bottom:60px;">Express your creativity through our microcontrollers, designed with customizability in mind!</p>
+    </div>
+
+    <!-- Best Sellers Section -->
+    <div class="container fade-in" style="position:absolute;background-color: rgb(255, 255, 255); left:0; right:0; padding-inline:20px;">
+        <div class="section2">
+            <p class="SectionTitle">Check out our BestSellers!</p>
+            <div class="productsDisplay">
+
+                <!-- Product 1 -->
+                <div class="product-1 fade-in">
+                    <img src="productImages/p1.webp" class="gs">
+                    <div class="productInfo">
+                        <p class="textPI"><strong>P1</strong> The P1 is the perfect miniature handheld, highly customizable and very smuggly.</p>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-1 fade-in">
+                    <img src="productImages/procu-B.png" class="gs">
+                    <div class="productInfo">
+                        <p class="textPI"><strong>Procu-B</strong> The B model of the Procu is the perfect home-management device, capable of controlling up to 3 devices!</p>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-1 fade-in">
+                    <img src="productImages/ImperioPro.webp" class="gs">
+                    <div class="productInfo">
+                        <p class="textPI"><strong>Imperio-Pro</strong>The top model of the Imperio, our sound board series! Upgraded mics, speakers, and storage!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Spacer -->
+    <div class="spacer" style="height: 400px;"></div>
+
+    <!-- Our Story Section -->
+    <div class="section3 fade-in" style="margin-top:10px; padding-block:40px;">
+        <p style="font-weight: bold; font-size: 50px; margin-bottom:60px; margin-top:10px;">Our Story</p>
+        <p>Following our discovery of the Raspberry Pi, we quickly uncovered its true capabilities.</p>
+        <h1 style="font-size:18px; text-align:center;">AND SO...</h1>
+        <p style="text-align: right; font-weight:bold;font-size:18px; color:rgb(210, 210, 210)">Fueled by our programming passion, we founded BitLab to grant everyone access to the joy of miniature gadgets and other trinkets.</p>
+        <h2 style="text-align: center; font-size:16px;">BUT WAIT!</h2>
+        <p style="font-size:22px;">Our products are all 3D printed using environmentally friendly materials, reducing our footprint, but not our ideas.</p>
+    </div>
+
+    <!-- Discover Section -->
+    <div class="section4 fade-in">
+        <p style="font-size:65px;text-align: center;">Like the <strong>idea?</strong></p>
+        <a href="shopBT.html">
+        <button class="DCbutton">Discover</button>
+        </a>
+    </div>
+
+    <!-- Spacer -->
+    <div class="spacer2" style="height: 480px; margin-bottom:80px;"></div>
+
+    <!-- Contact Section -->
+    <div class="section5 fade-in" id="bottom" style="padding-block:50px;">
+        <p style="font-weight: bold; font-size: 50px; margin-bottom:60px; margin-top:0;">Contact Us</p>
+        <p style="margin-bottom:35px;">Found any bugs?</p>
+        <p style="margin-bottom:35px;">Assembly assistance</p>
+        <p style="margin-bottom:35px;">Returns</p>
+        <p style="font-size: 24px;"><strong>Contact | <span class="contact" style="text-decoration: underline; cursor: pointer; color: rgb(255, 255, 255);"
+            onclick="navigator.clipboard.writeText('+40 723 272 938'); alert('Copied: +40 723 272 938');">+40 723 272 938</span></strong></p>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="usefulLinks">
+            <p><span style="font-size:20px;">BitLab</span> <span style="font-size:12px;">est.2025</span></p>
+            <p style="margin-top:5px;">Copyright &copy; 2025</p>
+        </div>
+        <div class="usefulLinks">
+            <p><strong>Contact</strong></p>
+            <p>HelloBLab@gmail.ro</p>
+            <p>+40 723 272 938</p>
+            <p>+40 722 292 092</p>
+            <p>700031</p>
+        </div>
+        <div class="usefulLinks">
+            <p><strong>Help</strong></p>
+            <p>Assembly assistance</p>
+            <p>Delivery</p>
+        </div>
+    </div>
+
+    <!-- JavaScript for Scroll Functions & Animations -->
+    <script src="scripts/scrollingAnimations.js"></script>
+
+</body>
+</html>

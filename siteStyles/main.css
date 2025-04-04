@@ -1,0 +1,243 @@
+/* Background Settings */
+body, html {
+  background-color: rgb(20, 20, 20); /* Dark background */
+  padding-top: 30px;
+  padding-inline: 18px;
+  scroll-behavior: smooth; /* Enables smooth scrolling */
+}
+
+body{
+  padding-bottom:180px;
+}
+
+html{
+  position:relative;
+  position:relative;
+  min-height:100%;
+}
+
+/* Header */
+.header {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 70px;
+  background-color: rgb(39, 39, 39); /* Darker header */
+  box-shadow: 0px 0.5px 0px rgba(255, 255, 255, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  opacity: 0.98;
+}
+
+/* Header Links */
+.headerLink {
+  color: white;
+  font-size: 20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  cursor: pointer;
+  text-decoration: none;
+  user-select: none;
+}
+
+.headerLink:hover {
+  opacity: 0.75;
+  cursor: pointer;
+}
+
+/* Section Title */
+.SectionTitle {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  background-color: rgba(30, 30, 30, 0.8);
+  padding: 5px;
+  color: rgb(235, 235, 235);
+  margin: 0;
+  user-select: none;
+}
+
+/* Section Styling */
+.section2 {
+  background-image: url("../productImages/2a211cc3-21a4-4096-abb2-5076bae74bfb.webp");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  padding: 10px;
+  margin: 40px 0 40px 0;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(30, 30, 30, 0.7);
+  max-width: 1200px;
+}
+
+/* Product Display */
+.productsDisplay {
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+  border: 2px solid white;
+  height: 200px;
+  width: 100%;
+  display: flex;
+  flex-direction:row;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgb(30, 30, 30);
+  margin: 20px 0 10px 0;
+  max-width: 620px;
+}
+
+
+
+/* Product Image */
+.gs {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  background-color: white;
+  border-radius: 15px;
+}
+
+/* Product Info */
+.textPI {
+  display: flex;
+  color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  font-size: 14px;
+  row-gap: 10px;
+}
+
+.productInfo {
+  padding: 5px;
+  position: absolute;
+  display: flex;
+  top: 0;
+  opacity: 0;
+  background: rgba(30, 30, 30, 0.7);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: inherit;
+  transition: opacity 200ms, scale 200ms;
+}
+
+.productInfo:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.product-1:hover {
+  transform: scale(1.05);
+}
+
+/* Sections */
+.section1, .section3, .section4, .section5 {
+  color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin: 30px 0 20px 0;
+  font-size: 20px;
+  position: relative;
+}
+
+/* White Background Section */
+.section4 {
+  position: absolute;
+  right: 0;
+  left: 0;
+  background-color: white;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-block: 60px;
+}
+
+/* Discover Button */
+.DCbutton {
+  margin-bottom: 60px;
+  padding: 1.1em 2.1em;
+  border-radius: 30px;
+  border: 1.5px rgb(0, 0, 0) solid;
+  box-shadow: 5px 0 20px rgba(0, 0, 0, 0.9), -5px 0 20px rgba(21, 226, 226, 0.9);
+  transition: box-shadow 1s, color 400ms, background-color 400ms, border-color 400ms;
+  font-size: medium;
+  color: white;
+  background-color: black;
+  user-select:none;
+}
+
+.DCbutton:hover {
+  box-shadow: -5px 0 20px rgba(0, 0, 0, 0.381), 5px 0 20px rgba(21, 226, 226, 0.704); 
+  color: black;
+  border-color: white;
+  background-color: white;
+  cursor: pointer;
+}
+
+.DCbutton:active {
+  opacity: 0.8;
+}
+
+/* Footer */
+.footer {
+  position:absolute;
+  left:0;
+  right: 0;
+  bottom:0;
+  background-color: rgb(39, 39, 39);
+  color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  padding-inline: 30px;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0px 0.5px 3px rgba(255, 255, 255, 0.7);
+  padding-block: 20px;
+}
+
+/* Contact Hover */
+.contact:hover {
+  opacity: 0.8;
+}
+
+/* Useful Links */
+.usefulLinks {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.usefulLinks p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.usefulLinks p strong {
+  font-size: 16px;
+}
+
+/* Scroll Animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Enlarge product on hover */
+.product-1 {
+  transition: transform 0.2s ease-in-out;
+}
+
+.product-1:hover {
+  transform: scale(1.05);
+}
+
